@@ -109,7 +109,19 @@
                 </footer>
             </div>
         </main>
+        <script>
+            window.onscroll = function() {scrollFunction()};
 
+            function scrollFunction() {
+                if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                    document.getElementById("header-img").style.width = "100px";
+                    document.getElementById("header").style.height = "60px";
+                } else {
+                    document.getElementById("header-img").style.width = "170px";
+                    document.getElementById("header").style.height = "120px";
+                }
+            }
+        </script>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" async defer></script>
     </body>
 </html>
