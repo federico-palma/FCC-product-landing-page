@@ -13,10 +13,11 @@ body{
 /* Header and navbar */
 
 #header{
+    background-color: rgb(0, 0, 0);
     position: fixed;
     top: 0;
     width: 102%;
-    height: 75px;
+    height: 130px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,23 +28,27 @@ body{
 }
 
 #header-img{
-    width: 300px;
-    height: 34.14px;
+    background-color: black;
+    width: 180px;
     margin: 10px;
+    margin-left: 30px;
     padding-right: 10px;
+    
 }
 
 #nav-bar{
+    background-color: black;
     width: 40%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-#nav-bar a{
+.nav-link{
+    background-color: black;
+    color: rgb(255, 255, 255);
     font-size: 0.8rem;
     text-decoration: none;
-    color: black;
     margin-top: 5px;
     width: auto;
 }
