@@ -109,6 +109,7 @@
                 </footer>
             </div>
         </main>
+
         <script>
             window.onscroll = function() {scrollFunction()};
 
@@ -116,12 +117,40 @@
                 if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
                     document.getElementById("header-img").style.width = "100px";
                     document.getElementById("header").style.height = "60px";
+                    if (screen.width < 635) {
+                        document.getElementById("nav-bar").style.flexDirection = "row";
+                    }
+                    
                 } else {
                     document.getElementById("header-img").style.width = "170px";
                     document.getElementById("header").style.height = "120px";
+                    if (screen.width < 635) {
+                        document.getElementById("nav-bar").style.flexDirection = "column";
+                    }
                 }
             }
+
+            // let itemHeader = document.getElementById("header");
+            // let winWidth = window.innerWidth
+            // itemHeader.addEventListener("mouseover", expandFunc, false);
+            // itemHeader.addEventListener("mouseout", shrinkFunc, false);
+
+            // function expandFunc() {  
+            //     if (winWidth < 635 && document.body.scrollTop < 50) {
+            //         document.getElementById("header-img").style.width = "170px";
+            //         document.getElementById("header").style.height = "120px";
+            //     }  
+            // }
+
+            // function shrinkFunc() { 
+            //     if (winWidth < 635 && document.body.scrollTop > 50) { 
+            //         document.getElementById("header-img").style.width = "100px";
+            //         document.getElementById("header").style.height = "60px";
+            //     }
+            // }
+            
         </script>
+
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" async defer></script>
     </body>
 </html>
