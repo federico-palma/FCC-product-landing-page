@@ -24,7 +24,7 @@ body{
     padding-right: 50px;
     padding-left: 35px;
     text-align: center;
-    box-shadow: 0px 3px 10px grey;
+    box-shadow: 0px 1px 10px black;
     transition: 0.5s;
 }
 
@@ -57,12 +57,53 @@ body{
 /* Main Section */
 
 #main{
-    margin-top: 90px;
+    margin-top: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
+}
+
+/* Video ad */
+
+#video{
+    width: 100%;
+}
+
+/* Features */
+
+#features{
+    margin: 30px;
+    max-width: 870px;
+    display: flex;
+    flex-direction: column;
+}
+
+#features h2{
+    font-size: 1.25rem;
+}
+
+#features p{
+    font-size: 0.8rem;
+}
+
+.items{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.items .icon{
+    width: 15%;
+    color: rgb(255, 140, 0);
+    font-size: 15px;
+    align-self: center;
+}
+
+.fa{
+    align-self: center;
 }
 
 /* Title and email input */
@@ -116,41 +157,6 @@ body{
     100%{background-color: rgb(253, 164, 41);}
 }
 
-/* Features */
-
-#features{
-    margin: 30px;
-    max-width: 870px;
-    display: flex;
-    flex-direction: column;
-}
-
-#features h2{
-    font-size: 1.25rem;
-}
-
-#features p{
-    font-size: 0.8rem;
-}
-
-.items{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-}
-
-.items .icon{
-    width: 15%;
-    color: rgb(255, 140, 0);
-    font-size: 15px;
-    align-self: center;
-}
-
-.fa{
-    align-self: center;
-}
-
 /* Media queries */
 
 @media only screen and (max-width: 635px){
@@ -166,6 +172,5 @@ body{
     }
 
     #main{
-        margin-top: 125px;
     }
 }
